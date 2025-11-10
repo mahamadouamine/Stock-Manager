@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="tableau.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+  <input type="checkbox" id="menu-toggle" hidden>
+  <header>
+    <div class="header-gauche">
+      <label for="menu-toggle" id="toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+
+      <h1>Gestion de Stock - Produits Électroniques</h1>
+    </div>
+    <div class="header-droit">
+      <img src="img/cloche3.png" alt="">
+      <div class="header-droit-icon"><i class="fa-solid fa-user"></i></div>
+      <p>Administrateur</p>
+    </div>
+  </header>
+  <aside class="dashboard">
+    <div>
+      <div class="dashboard-titre"><a href=""><i class="fa-solid fa-chart-line"></i> Dashboard</a></div>
+      <hr class="hr1">
+      <div class="menu">
+        <a href="tableau.html"><i class="fa-solid fa-gauge-high"></i> Tableau de bord</a>
+        <a href="analytics.html"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+        <a href="commandes.html"><i class="fa-solid fa-cart-shopping"></i> Commandes</a>
+        <a href="parametres.html"><i class="fa-solid fa-gears"></i> Paramètres</a>
+        <a href="rapports.html"><i class="fa-solid fa-chart-bar"></i> Rapports</a>
+        <a href="notifications.html"><i class="fa-solid fa-bell"></i> Notifications</a>
+      </div>
+    </div>
+    <div class="dashboard-pied">
+      <hr class="hr2">
+      <div class="dashboard-pied-1">
+        <span class="dashboard-pied-1-cercle"><i class="fa-solid fa-user"></i></span>
+        <p>Administrateur <span>Gestionnaire</span></p>
+      </div>
+      <a href="flou-notification.html">
+        <div class="dashboard-pied-2">
+          <span class="dashboard-pied-2-cercle"><i class="fa-solid fa-user"></i></span>
+          <p>Mon Profil</p>
+        </div>
+      </a>
+      <a href="index.html">
+        <div class="dashboard-pied-3">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <p>Déconnexion</p>
+        </div>
+      </a>
+    </div>
+  </aside>
+  <main>
+    <h1><i class="fa-solid fa-bell"></i> Notifications & Alertes</h1>
+    <p class="p">Centre de notifications et gestion des alertes système</p>
+    <div class="section">
+      <div class="card">
+        <div class="boxes-stacked bleu"><i class="fa-solid fa-boxes-stacked"></i></div>
+        <div class="card-text">
+          <h1>1,234</h1>
+          <p class="p">Produits en Stock</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="boxes-stacked jaune"><i class="fa-solid fa-triangle-exclamation"></i></div>
+        <div class="card-text">
+          <h1>23</h1>
+          <p class="p">Stock Faible</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="boxes-stacked vert"><i class="fa-solid fa-euro-sign"></i></div>
+        <div class="card-text">
+          <h1>€45,678</h1>
+          <p class="p">Valeur Totale</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="boxes-stacked gris"><i class="fa-solid fa-truck"></i></div>
+        <div class="card-text">
+          <h1>12</h1>
+          <p class="p">Commandes en Attente</p>
+        </div>
+      </div>
+    </div>
+    <div class="rapports">
+      <div class="rp-child1">
+        <label for="rp-button">Type :</label>
+        <select id="rp-button" name="rp-button">
+          <option value="ne">Toutes</option>
+          <option value="fr">Urgece</option>
+        </select>
+      </div>
+      <div class="rp-child1">
+        <label for="rp-button">Priorité :</label>
+        <select id="rp-button" name="rp-button">
+          <option value="ne">Toutes</option>
+          <option value="fr">Urgence</option>
+        </select>
+      </div>
+      <div class="rp-child1">
+        <label for="rp-button">Statut :</label>
+        <select id="rp-button" name="rp-button">
+          <option value="ne">Toutes</option>
+          <option value="fr">Urgence</option>
+        </select>
+      </div>
+      <div class="rp-child2">
+        <span><i class="fa-solid fa-filter"></i></span>
+        <span>
+          <p>Filtrer</p>
+        </span>
+      </div>
+    </div>
+
+
+
+
+    <div class="notification">
+      <div class="notif-left">
+        <div class="notif-icon">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+        </div>
+      </div>
+
+      <div class="notif-content">
+        <div class="notif-header">
+          <h3>Stock critique détecté</h3>
+          <span class="notif-time">Il y a 5 minutes</span>
+        </div>
+        <p>
+          Le produit <strong>"AirPods Pro 2"</strong> a atteint le seuil critique de stock
+          (<strong>3 unités restantes</strong>). Veuillez passer commande rapidement.
+        </p>
+
+        <div class="notif-actions">
+          <button class="btn-primary">Passer commande</button>
+          <button class="btn-secondary">Marquer comme lu</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="notification-">
+      <div class="notif-left">
+        <div class="notif-icon-">
+          <i class="fa-solid fa-circle-info"></i>
+        </div>
+      </div>
+
+      <div class="notif-content">
+        <div class="notif-header">
+          <h3>Stock critique détecté</h3>
+          <span class="notif-time">Il y a 5 minutes</span>
+        </div>
+        <p>
+          Le produit <strong>"AirPods Pro 2"</strong> a atteint le seuil critique de stock
+          (<strong>3 unités restantes</strong>). Veuillez passer commande rapidement.
+        </p>
+
+        <div class="notif-actions">
+          <button class="btn-primary-">Passer commande</button>
+          <button class="btn-secondary">Marquer comme lu</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="notification--">
+      <div class="notif-left">
+        <div class="notif-icon--">
+          <i class="fa-solid fa-check"></i>
+        </div>
+      </div>
+
+      <div class="notif-content">
+        <div class="notif-header">
+          <h3>Commande expédiée</h3>
+          <span class="notif-time">Il y a 5 minutes</span>
+        </div>
+        <p>
+          La commande #CMD-2025-003 a été expediées avec succès. Numero de suivi : FR123456789
+        </p>
+
+        <div class="notif-actions">
+          <button class="btn-primary--">Suivre l'envoi</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="notification--">
+      <div class="notif-left">
+        <div class="notif-icon---">
+          <i class="fa-solid fa-gear"></i>
+        </div>
+      </div>
+
+      <div class="notif-content">
+        <div class="notif-header">
+          <h3>Sauvegarde automatique</h3>
+          <span class="notif-time">Il y a 5 minutes</span>
+        </div>
+        <p>
+          Sauvegarde quotidienne des données terminée avec succès. 23GB de données sauvegardées
+        </p>
+
+        <div class="notif-actions">
+          <button class="btn-primary---">Voir les détail</button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="notification--">
+      <div class="notif-left">
+        <div class="notif-icon----">
+          <i class="fa-solid fa-shield"></i>
+        </div>
+      </div>
+
+      <div class="notif-content">
+        <div class="notif-header">
+          <h3>Connexion depuis un nouvel appareil</h3>
+          <span class="notif-time">Il y a 5 minutes</span>
+        </div>
+        <p>
+          Connexion détecteé depuis un nouvel appareil (iPhone, Parie, France). Si ce n'est vous, changer votre mot de
+          passe
+        </p>
+
+        <div class="notif-actions">
+          <button class="btn-primary----">Sécurisé le compte</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="tp-child first-tp-child not-child">
+      <div class="tp-aligne">
+        <span><input type="checkbox"></i></span>
+        <span>
+          <p>Top Produits</p>
+        </span>
+      </div>
+      <div class="not-cont">
+        <span class="not-1">
+          <span><i class="fa-solid fa-check"></i></span>
+          <p class="not-marque">Marquer comme lu</p>
+        </span>
+        <span class="not-2">
+          <span><i class="fa-solid fa-trash"></i></span>
+          <p>Supprimer</p>
+        </span>
+      </div>
+    </div>
+
+
+  </main>
+</body>
+
+</html>

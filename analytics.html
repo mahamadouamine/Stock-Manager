@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tableau.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    <input type="checkbox" id="menu-toggle" hidden>
+    <header>
+        <div class="header-gauche">
+            <label for="menu-toggle" id="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <h1>Gestion de Stock - Produits Électroniques</h1>
+        </div>
+        <div class="header-droit">
+            <img src="img/cloche3.png" alt="">
+            <div class="header-droit-icon"><i class="fa-solid fa-user"></i></div>
+            <p>Administrateur</p>
+        </div>
+    </header>
+    <aside class="dashboard">
+        <div>
+            <div class="dashboard-titre"><a href=""><i class="fa-solid fa-chart-line"></i> Dashboard</a></div>
+            <hr class="hr1">
+            <div class="menu">
+                <a href="tableau.html"><i class="fa-solid fa-gauge-high"></i> Tableau de bord</a>
+                <a href="analytics.html"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+                <a href="commandes.html"><i class="fa-solid fa-cart-shopping"></i> Commandes</a>
+                <a href="parametres.html"><i class="fa-solid fa-gears"></i> Paramètres</a>
+                <a href="rapports.html"><i class="fa-solid fa-chart-bar"></i> Rapports</a>
+                <a href="notifications.html"><i class="fa-solid fa-bell"></i> Notifications</a>
+            </div>
+        </div>
+        <div class="dashboard-pied">
+            <hr class="hr2">
+            <div class="dashboard-pied-1">
+                <span class="dashboard-pied-1-cercle"><i class="fa-solid fa-user"></i></span>
+                <p>Administrateur <span>Gestionnaire</span></p>
+            </div>
+            <a href="flout-analytics.html">
+                <div class="dashboard-pied-2">
+                    <span class="dashboard-pied-2-cercle"><i class="fa-solid fa-user"></i></span>
+                    <p>Mon Profil</p>
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="dashboard-pied-3">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <p>Déconnexion</p>
+                </div>
+            </a>
+        </div>
+    </aside>
+    <main>
+        <h1><i class="fa-solid fa-chart-line"></i> Analytics & Rapports</h1>
+        <p class="p">Analyse complète des performances et tendances</p>
+        <div class="section">
+            <div class="card">
+                <div class="boxes-stacked bleu"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="card-text-analytic">
+                    <h1>€45,678</h1>
+                    <p class="p-analytic">Chiffre d'affaires</p>
+                    <p><span class="card-text-plus">+12.5%</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="boxes-stacked vert"><i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="card-text-analytic">
+                    <h1>1,234</h1>
+                    <p class="p-analytic">Commandes</p>
+                    <p><span class="card-text-plus">+8.2%</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="boxes-stacked jaune"><i class="fa-solid fa-users"></i></div>
+                <div class="card-text-analytic">
+                    <h1>856</h1>
+                    <p class="p-analytic">Nouveaux clients</p>
+                    <p><span class="card-text-moins">-2.1%</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="boxes-stacked rouge"><i class="fa-solid fa-house"></i>
+                </div>
+                <div class="card-text-analytic">
+                    <h1>3.4%</h1>
+                    <p class="p-analytic">Taux de conversion</p>
+                    <p><span class="card-text-plus">+0.3%</span></p>
+                </div>
+            </div>
+        </div>
+        <section class="graphique-vente">
+            <div class="evolution-vente">
+                <div class="ev-had">
+                    <h1 class="ev-titre"><i class="fa-solid fa-chart-line"></i>Évolution des Ventes</h1>
+                    <label for="ev-jours-vente"></label>
+                    <select id="ev-jours-vente" name="jours-vente">
+                        <option value="ne">30 derniers jours</option>
+                        <option value="fr">20 derniers jours</option>
+                        <option value="us">10 derniers jours</option>
+                        <option value="ca">2 derniers jours</option>
+                    </select>
+                </div>
+                <div>
+                    <div class="ev-body">
+                        <div class="ev-body-child">
+                            <span class="ev-body1-bleu1"></span>
+                            <p class="ev-body1-text">Jan</p>
+                            <p class="ev-body1-nim">€8.500</p>
+                        </div>
+                        <div class="ev-body-child">
+                            <span class="ev-body1-bleu2"></span>
+                            <p class="ev-body1-text">Fév</p>
+                            <p class="ev-body1-nim">€9.200</p>
+                        </div>
+                        <div class="ev-body-child">
+                            <span class="ev-body1-bleu3"></span>
+                            <p class="ev-body1-text">Mar</p>
+                            <p class="ev-body1-nim">€7.800</p>
+                        </div>
+                        <div class="ev-body-child">
+                            <span class="ev-body1-bleu4"></span>
+                            <p class="ev-body1-text">Avr</p>
+                            <p class="ev-body1-nim">€9.500</p>
+                        </div>
+                        <div class="ev-body-child">
+                            <span class="ev-body1-bleu5"></span>
+                            <p class="ev-body1-text">Mai</p>
+                            <p class="ev-body1-nim">€8.800</p>
+                        </div>
+                        <div class="ev-body-child">
+                            <span class="ev-body1-bleu6"></span>
+                            <p class="ev-body1-text">Jun</p>
+                            <p class="ev-body1-nim">€6.900</p>
+                        </div>
+                        <div class="ev-body-child">
+                            <span class="ev-body1-bleu7"></span>
+                            <p class="ev-body1-text">Jul</p>
+                            <p class="ev-body1-nim">€8.200</p>
+                        </div>
+                        <div class="ev-body-child">
+                            <span class="ev-body1-bleu8"></span>
+                            <p class="ev-body1-text">Aoû</p>
+                            <p class="ev-body1-nim">€8.900</p>
+                        </div>
+                        <div class="ev-body-child">
+                            <span class="ev-body1-bleu9"></span>
+                            <p class="ev-body1-text">Sept</p>
+                            <p class="ev-body1-nim">€8.900</p>
+                        </div>
+                        <div class="ev-body-child">
+                            <span class="ev-body1-bleu10"></span>
+                            <p class="ev-body1-text">Oct</p>
+                            <p class="ev-body1-nim">€8.900</p>
+                        </div>
+                        <div class="ev-body-child">
+                            <span class="ev-body1-bleu11"></span>
+                            <p class="ev-body1-text">Nov</p>
+                            <p class="ev-body1-nim">€8.900</p>
+                        </div>
+                        <div class="ev-body-child">
+                            <span class="ev-body1-bleu12"></span>
+                            <p class="ev-body1-text">Dec</p>
+                            <p class="ev-body1-nim">€8.900</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="ev-foot">
+                            <div class="ev-vente-objectif">
+                                <div class="ev-foot-vente"><span></span>
+                                    <p>Ventes Réelles</p>
+                                </div>
+                                <div class="ev-foot-objectif"><span></span>
+                                    <p>Objectifs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="preparation-categorie">
+                <div class="pc-had">
+                    <div class="pc-had-ligne">
+                        <span><i class="fa-solid fa-chart-line"></i>
+                        </span>
+                        <span>
+                            <h3>Répartition par Catégorie</h3>
+                        </span>
+                    </div>
+                </div>
+                <div class="pc-body">
+                    <div class="pc-body-">
+                        <span>
+                            <p>Smartphones</p>
+                        </span>
+                        <span>
+                            <p class="pc-had-bleu">€15,980</p>
+                        </span>
+                    </div>
+                    <div class="pc-body-interval">
+                        <div class="pc-body-ligne"></div>
+                        <p>35%</p>
+                    </div>
+                    <div class="pc-body-">
+                        <span>
+                            <p>Laptops</p>
+                        </span>
+                        <span>
+                            <p class="pc-had-bleu">€11,415</p>
+                        </span>
+                    </div>
+                    <div class="pc-body-interval">
+                        <div class="pc-body-ligne"></div>
+                        <p>25%</p>
+                    </div>
+                    <div class="pc-body-">
+                        <span>
+                            <p>Tablettes</p>
+                        </span>
+                        <span>
+                            <p class="pc-had-bleu">€9,132</p>
+                        </span>
+                    </div>
+                    <div class="pc-body-interval">
+                        <div class="pc-body-ligne"></div>
+                        <p>20%</p>
+                    </div>
+                    <div class="pc-body-">
+                        <span>
+                            <p>Accessoires</p>
+                        </span>
+                        <span>
+                            <p class="pc-had-bleu">€9,132</p>
+                        </span>
+                    </div>
+                    <div class="pc-body-interval">
+                        <div class="pc-body-ligne"></div>
+                        <span>
+                            <p>20%</p>
+                        </span>
+                    </div>
+                    <div class="pc-body-">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="top-produits">
+            <div class="tp-child first-tp-child">
+                <div class="tp-aligne">
+                    <span><i class="fa-solid fa-trophy"></i></span>
+                    <span>
+                        <p>Top Produits</p>
+                    </span>
+                </div>
+                <div>
+                    <label for="tp-button"></label>
+                    <select id="tp-button" name="tp-button">
+                        <option value="ne">Par ventes</option>
+                        <option value="fr">Par vues</option>
+                        <option value="us">Par durabilité</option>
+                        <option value="ca">Par mode</option>
+                    </select>
+                </div>
+            </div>
+            <div class="tp-child tp-ch-space-left tp-body-bg">
+                <div class="tp-child1">
+                    <p>Rang</p>
+                    <p>Produit</p>
+                </div>
+                <div class="tp-chid2">
+                    <span>Ventes</span>
+                    <span>Revenues</span>
+                    <span>Marge</span>
+                </div>
+            </div>
+            <div class="tp-child tp-ch-space-left">
+                <div class="tp-child1">
+                    <span class="tp-cerle-jaune1">1</span>
+                    <div class="tp-ch-celcle-text">
+                        <span><i class="fa-solid fa-mobile-screen-button"></i></span>
+                        <span>
+                            <p>iPhone 15 Pro</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="tp-chid2">
+                    <p>234</p>
+                    <p>€280,866</p>
+                    <p>€42,130</p>
+                </div>
+            </div>
+            <div class="tp-child tp-ch-space-left">
+                <div class="tp-child1">
+                    <span class="tp-cerle-jaune2">2</span>
+                    <div class="tp-ch-celcle-text">
+                        <span><i class="fa-solid fa-laptop"></i></span>
+                        <span>
+                            <p>MackBook Pro</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="tp-chid2">
+                    <p>89</p>
+                    <p>€257,911</p>
+                    <p>€51,582</p>
+                </div>
+            </div>
+            <div class="tp-child tp-ch-space-left en-tp-chid">
+                <div class="tp-child1">
+                    <span class="tp-cerle-jaune3">3</span>
+                    <div class="tp-ch-celcle-text">
+                        <span><i class="fa-solid fa-headphones"></i></span>
+                        <span>
+                            <p>MackBook Pro</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="tp-chid2">
+                    <p>445</p>
+                    <p>€124,155</p>
+                    <p>€18,623</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tableau.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <input type="checkbox" id="menu-toggle" hidden>
+    <header>
+        <div class="header-gauche">
+            <label for="menu-toggle" id="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <h1>Gestion de Stock - Produits Électroniques</h1>
+        </div>
+        <div class="header-droit">
+            <img src="img/cloche3.png" alt="">
+            <div class="header-droit-icon"><i class="fa-solid fa-user"></i></div>
+            <p>Administrateur</p>
+        </div>
+    </header>
+    <aside class="dashboard">
+        <div>
+            <div class="dashboard-titre"><a href=""><i class="fa-solid fa-chart-line"></i> Dashboard</a></div>
+            <hr class="hr1">
+            <div class="menu">
+                <a href="tableau.html"><i class="fa-solid fa-gauge-high"></i> Tableau de bord</a>
+                <a href="analytics.html"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+                <a href="commandes.html"><i class="fa-solid fa-cart-shopping"></i> Commandes</a>
+                <a href="parametres.html"><i class="fa-solid fa-gears"></i> Paramètres</a>
+                <a href="rapports.html"><i class="fa-solid fa-chart-bar"></i> Rapports</a>
+                <a href="notifications.html"><i class="fa-solid fa-bell"></i> Notifications</a>
+            </div>
+        </div>
+        <div class="dashboard-pied">
+            <hr class="hr2">
+            <div class="dashboard-pied-1">
+                <span class="dashboard-pied-1-cercle"><i class="fa-solid fa-user"></i></span>
+                <p>Administrateur <span>Gestionnaire</span></p>
+            </div>
+            <div class="dashboard-pied-2">
+                <span class="dashboard-pied-2-cercle"><i class="fa-solid fa-user"></i></span>
+                <p><a href="flout-parametres.html">Mon Profil</a></p>
+            </div>
+            <div class="dashboard-pied-3">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <p>Déconnexion</p>
+            </div>
+        </div>
+    </aside>
+    <main>
+
+        <div class="para-h1">
+            <span><i class="fa-solid fa-gears"></i></span>
+            <h1>Paramètres et Configuration</h1>
+        </div>
+        <p class="p-">Configuration du syqtème et préférences utilisateur</p>
+        <div class="para-gestion">
+            <span><i class="fa-solid fa-sliders"></i></span>
+            <h2>Paramètres Généreaux</h2>
+        </div>
+
+        <div class="section-">
+            <div class="card-">
+                <div class="card-text-">
+                    <h2>Notifications</h2>
+                    <p class="p-">Recevoir des notifications par email</p>
+                </div>
+                <div>
+                    <label class="para-bleu">
+                        <input type="checkbox">
+                        <span class="para-cercle"></span>
+                    </label>
+
+                </div>
+            </div>
+            <div class="card-">
+                <div class="card-text-">
+                    <h2>Mode Sombre</h2>
+                    <p class="p-">Activer le thème sombre</p>
+                </div>
+                <div>
+                    <label class="para-bleu">
+                        <input type="checkbox">
+                        <span class="para-cercle"></span>
+                    </label>
+
+                </div>
+            </div>
+            <div class="card-">
+                <div class="card-text-">
+                    <h2>Auto-sauvegarde</h2>
+                    <p class="p">Sauvegarder automatiquement les notifications</p>
+                </div>
+                <div>
+                    <label class="para-bleu">
+                        <input type="checkbox">
+                        <span class="para-cercle"></span>
+                    </label>
+
+                </div>
+            </div>
+            <div class="card_">
+                <div class="card-text-">
+                    <h2>Langue</h2>
+                    <p class="p-">Langue de l'interface</p>
+                </div>
+                <div class="para-button-français">
+                    <label for="para-button"></label>
+                    <select id="para-button" name="para-button">
+                        <option value="ne">Français</option>
+                        <option value="fr">Anglais</option>
+                        <option value="us">Zarma</option>
+                        <option value="ca">Espagnole</option>
+                        <option value="ca">Haoussa</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="para-gestion">
+            <span><i class="fa-solid fa-boxes-stacked"></i></span>
+            <h2>Gestion de Stock</h2>
+        </div>
+        <div class="section--">
+            <div class="card--">
+                <div class="card-text--">
+                    <h2>Seuil d'alerte</h2>
+                    <p class="p--">Nombre minimum d'article avant alerte</p>
+                </div>
+                <div class="para-g-number">
+                    <input type="number">
+                </div>
+            </div>
+            <div class="card--">
+                <div class="card-text--">
+                    <h2>Auto-commande</h2>
+                    <p class="p--">Commander automatiquement en cas de stock faible</p>
+                </div>
+                <div>
+                    <label class="para-bleu">
+                        <input type="checkbox">
+                        <span class="para-cercle"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="card--">
+                <div class="card-text--">
+                    <h2>Devise</h2>
+                    <p class="p--">Devise d'affichage</p>
+                </div>
+                <div>
+                    <label for="para-button"></label>
+                    <select id="para-button" name="para-button">
+                        <option value="ne">Euro(€)</option>
+                        <option value="fr">Dolar($)</option>
+                        <option value="us">CFA(F)</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="para-gestion">
+            <span><i class="fa-solid fa-shield"></i></span>
+            <h2>Sécurité</h2>
+        </div>
+        <div class="section--">
+            <div class="card--">
+                <div class="card-text--">
+                    <h2>Authentification à deux facteurs</h2>
+                    <p class="p--">Activer la 2FA pour plus de sécurité</p>
+                </div>
+                <div class="para-g-active1">
+                    <p>Activer</p>
+                </div>
+            </div>
+            <div class="card--">
+                <div class="card-text--">
+                    <h2>Changer le mot de passe</h2>
+                    <p class="p--">Modifier votre mot de passe actuel</p>
+                </div>
+                <div class="para-g-active2">
+                    <p>Changer</p>
+                </div>
+            </div>
+            <div class="card--">
+                <div class="card-text--">
+                    <h2>Séssions actives</h2>
+                    <p class="p--">Gérer les sessions connectées</p>
+                </div>
+                <div class="para-g-active3">
+                    <p>Vues(3)</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="para-gestion">
+            <span><i class="fa-solid fa-layer-group"></i></span>
+            <h2>Système</h2>
+        </div>
+        <section class="section---">
+            <div class="s1">
+                <span><i class="fa-solid fa-image"></i></span>
+                <p>Sauvegarder la configuration</p>
+            </div>
+            <div class="s2">
+                <span><i class="fa-solid fa-download"></i></span>
+                <p>Exporter les paramètres</p>
+            </div>
+            <div class="s3">
+                <span><i class="fa-solid fa-rotate-left"></i></span>
+                <p>Réinitialiser par défaut</p>
+            </div>
+            <div class="s4">
+                <span><i class="fa-solid fa-trash"></i></span>
+                <p>Effacer toutes les données</p>
+            </div>
+            <div class="s5">
+
+            </div>
+        </section>
+
+        <section class="profil-flou">
+            <div class="pf-card">
+                <div class="pf-child1">
+                    <div class="pfc1-1">
+                        <span class="pfc-celcle1"><i class="fa-solid fa-user"></i></span>
+                        <span>
+                            <h2>Mon Profil</h2>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+                </div>
+                <div class="pf-child2">
+                    <span class="pfc2-1"><i class="fa-solid fa-user"></i></span>
+                    <span class="pfc2-2">
+                        <p>Changer la photo</p>
+                    </span>
+                </div>
+                <div class="pf-child3">
+                    <div class="commandes-flou">
+                        <div class="cmd-child1-flou">
+                            <label class="cmd-button-flou">Nom :</label>
+                            <input type="text" name="" class="cmd-button-flou2" placeholder="Administrateur">
+                        </div>
+                        <div class="cmd-child2-flou">
+                            <label class="cmd-button-flou">Prénom :</label>
+                            <input type="text" name="" class="cmd-button-flou2" placeholder="Amine">
+                        </div>
+                    </div>
+                    <div class="commandes-flou">
+                        <div class="cmd-child1-flou">
+                            <label class="cmd-button-flou">Email :</label>
+                            <input type="text" name="" class="cmd-button-flou2"
+                                placeholder="mahamadouaminemamoudousouley@gmail.com">
+                        </div>
+                        <div class="cmd-child2-flou">
+                            <div class="cmd-button-flou">Téléphone :</div>
+                            <input type="text" name="" class="cmd-button-flou2" placeholder="+227 88485190">
+
+                        </div>
+                    </div>
+                    <div class="commandes-flou">
+                        <div class="cmd-child1-flou1">
+                            <label class="cmd-button-flou">Rôle :</label>
+                            <input type="text" name="" class="cmd-button-flou2" placeholder="Proprietaire">
+                        </div>
+                    </div>
+                    <div class="commandes-flou">
+                        <div class="cmd-child1-flou1">
+                            <label class="cmd-button-flou">Dernièere connexion :</label>
+                            <input type="text" name="" class="cmd-button-flou2" placeholder="15 Janvier 2025 à 14:30">
+                        </div>
+                    </div>
+                </div>
+                <hr class="pf-hr">
+                <div class="pf-child4">
+                    <div class="pf-child4-1">
+                        <span class="pf4c-1"><a class="pf-a" href="commandes.html">Fermer</a></span>
+                        <span class="pfc4-2">
+                            <p>Sauvegarser</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <body>
+
+</html>

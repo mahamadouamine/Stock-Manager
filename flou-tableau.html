@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tableau.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <input type="checkbox" id="menu-toggle" hidden>
+    <header>
+        <div class="header-gauche">
+            <label for="menu-toggle" id="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <h1>Gestion de Stock - Produits Électroniques</h1>
+        </div>
+        <div class="header-droit">
+            <img src="img/cloche3.png" alt="">
+            <div class="header-droit-icon"><i class="fa-solid fa-user"></i></div>
+            <p>Administrateur</p>
+        </div>
+    </header>
+    <aside class="dashboard">
+        <div>
+            <div class="dashboard-titre"><a href=""><i class="fa-solid fa-chart-line"></i> Dashboard</a></div>
+            <hr class="hr1">
+            <div class="menu">
+                <a href="tableau.html"><i class="fa-solid fa-gauge-high"></i> Tableau de bord</a>
+                <a href="analytics.html"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+                <a href="commandes.html"><i class="fa-solid fa-cart-shopping"></i> Commandes</a>
+                <a href="parametres.html"><i class="fa-solid fa-gears"></i> Paramètres</a>
+                <a href="rapports.html"><i class="fa-solid fa-chart-bar"></i> Rapports</a>
+                <a href="notifications.html"><i class="fa-solid fa-bell"></i> Notifications</a>
+            </div>
+        </div>
+        <div class="dashboard-pied">
+            <hr class="hr2">
+            <div class="dashboard-pied-1">
+                <span class="dashboard-pied-1-cercle"><i class="fa-solid fa-user"></i></span>
+                <p>Administrateur <span>Gestionnaire</span></p>
+            </div>
+            <div class="dashboard-pied-2">
+                <span class="dashboard-pied-2-cercle"><i class="fa-solid fa-user"></i></span>
+                <p>Mon Profil</p>
+            </div>
+            <div class="dashboard-pied-3">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <p>Déconnexion</p>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <h1>Tableau de Board Principal</h1>
+        <p class="p">Gestion des stocks de produits électroniques</p>
+        <div class="section">
+            <div class="card">
+                <div class="boxes-stacked bleu"><i class="fa-solid fa-boxes-stacked"></i></div>
+                <div class="card-text">
+                    <h1>1,234</h1>
+                    <p class="p">Produits en Stock</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="boxes-stacked jaune"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                <div class="card-text">
+                    <h1>23</h1>
+                    <p class="p">Stock Faible</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="boxes-stacked vert"><i class="fa-solid fa-euro-sign"></i></div>
+                <div class="card-text">
+                    <h1>€45,678</h1>
+                    <p class="p">Valeur Totale</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="boxes-stacked gris"><i class="fa-solid fa-truck"></i></div>
+                <div class="card-text">
+                    <h1>12</h1>
+                    <p class="p">Commandes en Attente</p>
+                </div>
+            </div>
+        </div>
+        <div class="en-tete-tableau">
+            <div class="en-tete1">
+                <p class="p">Gestion de Stocks</p>
+            </div>
+            <div class="en-tete2"><i class="fa-solid fa-magnifying-glass"></i><input type="text"
+                    placeholder="Rechercher un produit..."></div>
+            <div class="en-tete3">
+                <div class="en-tete3-1"><i class="fa-solid fa-plus"></i>
+                    <p>Ajouter Produit</p>
+                </div>
+                <div class="en-tete3-2"><i class="fa-solid fa-download"></i>
+                    <p>Exporter</p>
+                </div>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th><span class="aligne decalage">ID</span></th>
+                    <th><span class="aligne">PRODUIT</span></th>
+                    <th><span class="aligne">CATÉGORIE</span></th>
+                    <th><span class="aligne">STOCK</span></th>
+                    <th><span class="aligne">PRIX</span></th>
+                    <th><span class="aligne">STATUS</span></th>
+                    <th><span class="aligne">ACTIONS</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="box-shadow">
+                    <td><span class="decalage">#001</span></td>
+                    <td>
+                        <span class="bloque">
+                            <div><i class="fa-solid fa-laptop"></i></div>
+                            <div class="space">
+                                <div>MacBook Pro 16</div>
+                                <div>Apple - M3 Pro</div>
+                            </div>
+                        </span>
+                    </td>
+                    <td><span class="grise">LAPTOP</span></td>
+                    <td><span class="cercle-verte">15</span></td>
+                    <td><span></span>€2,899</td>
+                    <td> <span class="verte">Actif</span></td>
+                    <td><span class="separation"><i class="fa-solid fa-pen-to-square"></i><i
+                                class="fa-solid fa-trash"></i></span></td>
+                </tr>
+                <tr class="box-shadow">
+                    <td><span class="decalage">#002</span></td>
+                    <td>
+                        <span class="bloque">
+                            <div><i class="fa-solid fa-mobile-screen-button"></i></div>
+                            <div class="space">
+                                <div>iPhone 15 Pro</div>
+                                <div>Apple - 128GB</div>
+                            </div>
+                        </span>
+                    </td>
+                    <td><span class="verte">SMARTPHONE</span></td>
+                    <td><span class="cercle-jaune">8</span></td>
+                    <td><span></span>€1,199</td>
+                    <td> <span class="verte">Actif</span></td>
+                    <td><span class="separation"><i class="fa-solid fa-pen-to-square"></i><i
+                                class="fa-solid fa-trash"></i></span></td>
+                </tr>
+                <tr class="box-shadow">
+                    <td><span class="decalage">#003</span></td>
+                    <td>
+                        <span class="bloque">
+                            <div><i class="fa-solid fa-headphones"></i></i></div>
+                            <div class="space">
+                                <div>AirPods Pro 2</div>
+                                <div>Apple - USB-C</div>
+                            </div>
+                        </span>
+                    </td>
+                    <td><span class="Jaune">AUDIO</span></td>
+                    <td><span class="cercle-rose">3</span></td>
+                    <td><span></span>€279</td>
+                    <td> <span class="Jaune">Stock Faible</span></td>
+                    <td><span class="separation"><i class="fa-solid fa-pen-to-square"></i><i
+                                class="fa-solid fa-trash"></i></span></td>
+                </tr>
+                <tr class="box-shadow">
+                    <td><span class="decalage">#004</span></td>
+                    <td>
+                        <span class="bloque">
+                            <div><i class="fa-solid fa-tablet-screen-button"></i></div>
+                            <div class="space">
+                                <div>iPad Air</div>
+                                <div>Apple - 64GB</div>
+                            </div>
+                        </span>
+                    </td>
+                    <td><span class="grise">Tablette</span></td>
+                    <td><span class="cercle-verte">22</span></td>
+                    <td><span></span>€649</td>
+                    <td> <span class="verte">Actif</span></td>
+                    <td><span class="separation"><i class="fa-solid fa-pen-to-square"></i><i
+                                class="fa-solid fa-trash"></i></span></td>
+                </tr>
+                <tr class="box-shadow">
+                    <td><span class="decalage">#005</span></td>
+                    <td>
+                        <span class="bloque">
+                            <div><i class="fa-solid fa-tv"></i></div>
+                            <div class="space">
+                                <div>Apple TV 4K</div>
+                                <div>128GB - WIFI</div>
+                            </div>
+                        </span>
+                    </td>
+                    <td><span class="rose">TV</span></td>
+                    <td><span class="cercle-jaune">12</span></td>
+                    <td><span></span>€179</td>
+                    <td> <span class="verte">Actif</span></td>
+                    <td><span class="separation">
+                            <div><i class="fa-solid fa-pen-to-square"></i></div>
+                            <div><i class="fa-solid fa-trash"></i>
+                        </span></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <section class="profil-flou">
+        <div class="pf-card">
+            <div class="pf-child1">
+                <div class="pfc1-1">
+                    <span class="pfc-celcle1"><i class="fa-solid fa-user"></i></span>
+                    <span>
+                        <h2>Mon Profil</h2>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-x"></i>
+                </div>
+            </div>
+            <div class="pf-child2">
+                <span class="pfc2-1"><i class="fa-solid fa-user"></i></span>
+                <span class="pfc2-2">
+                    <p>Changer la photo</p>
+                </span>
+            </div>
+            <div class="pf-child3">
+                <div class="commandes-flou">
+                    <div class="cmd-child1-flou">
+                        <label class="cmd-button-flou">Nom :</label>
+                        <input type="text" name="" class="cmd-button-flou2" placeholder="Administrateur">
+                    </div>
+                    <div class="cmd-child2-flou">
+                        <label class="cmd-button-flou">Prénom :</label>
+                        <input type="text" name="" class="cmd-button-flou2" placeholder="Amine">
+                    </div>
+                </div>
+                <div class="commandes-flou">
+                    <div class="cmd-child1-flou">
+                        <label class="cmd-button-flou">Email :</label>
+                        <input type="text" name="" class="cmd-button-flou2"
+                            placeholder="mahamadouaminemamoudousouley@gmail.com">
+                    </div>
+                    <div class="cmd-child2-flou">
+                        <div class="cmd-button-flou">Téléphone :</div>
+                        <input type="text" name="" class="cmd-button-flou2" placeholder="+227 88485190">
+
+                    </div>
+                </div>
+                <div class="commandes-flou">
+                    <div class="cmd-child1-flou1">
+                        <label class="cmd-button-flou">Rôle :</label>
+                        <input type="text" name="" class="cmd-button-flou2" placeholder="Proprietaire">
+                    </div>
+                </div>
+                <div class="commandes-flou">
+                    <div class="cmd-child1-flou1">
+                        <label class="cmd-button-flou">Dernièere connexion :</label>
+                        <input type="text" name="" class="cmd-button-flou2" placeholder="15 Janvier 2025 à 14:30">
+                    </div>
+                </div>
+            </div>
+            <hr class="pf-hr">
+            <div class="pf-child4">
+                <div class="pf-child4-1">
+                    <span class="pf4c-1"><a class="pf-a" href="commandes.html">Fermer</a></span>
+                    <span class="pfc4-2">
+                        <p>Sauvegarser</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tableau.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+    <input type="checkbox" id="menu-toggle" hidden>
+    <header>
+        <div class="header-gauche">
+            <label for="menu-toggle" id="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <h1>Gestion de Stock - Produits Électroniques</h1>
+        </div>
+        <div class="header-droit">
+            <img src="img/cloche3.png" alt="">
+            <div class="header-droit-icon"><i class="fa-solid fa-user"></i></div>
+            <p>Administrateur</p>
+        </div>
+    </header>
+    <aside class="dashboard">
+        <div>
+            <div class="dashboard-titre"><a href=""><i class="fa-solid fa-chart-line"></i> Dashboard</a></div>
+            <hr class="hr1">
+            <div class="menu">
+                <a href="tableau.html"><i class="fa-solid fa-gauge-high"></i> Tableau de bord</a>
+                <a href="analytics.html"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+                <a href="commandes.html"><i class="fa-solid fa-cart-shopping"></i> Commandes</a>
+                <a href="parametres.html"><i class="fa-solid fa-gears"></i> Paramètres</a>
+                <a href="rapports.html"><i class="fa-solid fa-chart-bar"></i> Rapports</a>
+                <a href="notifications.html"><i class="fa-solid fa-bell"></i> Notifications</a>
+            </div>
+        </div>
+        <div class="dashboard-pied">
+            <hr class="hr2">
+            <div class="dashboard-pied-1">
+                <span class="dashboard-pied-1-cercle"><i class="fa-solid fa-user"></i></span>
+                <p>Administrateur <span>Gestionnaire</span></p>
+            </div>
+            <a href="flou-raport.html">
+                <div class="dashboard-pied-2">
+                    <span class="dashboard-pied-2-cercle"><i class="fa-solid fa-user"></i></span>
+                    <p>Mon Profil</p>
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="dashboard-pied-3">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <p>Déconnexion</p>
+                </div>
+            </a>
+        </div>
+    </aside>
+    <main>
+        <h1><i class="fa-solid fa-chart-bar"></i> Rapports & Analytics</h1>
+        <p class="px">Génération et consultation des rapports détaillés</p>
+        <div class="rapports">
+            <div class="rp-child1">
+                <label for="rp-button">Type de rapport :</label>
+                <select id="rp-button" name="rp-button">
+                    <option value="ne">Rapport des ventes</option>
+                    <option value="fr">Rapport client</option>
+                    <option value="us">Rapport d'achat</option>
+                </select>
+            </div>
+            <div class="rp-child1">
+                <label for="rp-button">Période :</label>
+                <select id="rp-button" name="rp-button">
+                    <option value="ne">Ce mois</option>
+                    <option value="fr">Le mois dernier</option>
+                    <option value="us">L'année passée</option>
+                </select>
+            </div>
+            <div class="rp-child1">
+                <label for="rp-button">Format :</label>
+                <select id="rp-button" name="rp-button">
+                    <option value="ne">PDF</option>
+                    <option value="fr">PNG</option>
+                    <option value="us">ORG</option>
+                    <option value="ca">TXT</option>
+                </select>
+            </div>
+            <div class="rp-child2">
+                <span><i class="fa-solid fa-window-maximize"></i></span>
+                <span>
+                    <p>Générer le rapport</p>
+                </span>
+            </div>
+        </div>
+        <div class="section-rp">
+            <div class="card-rp">
+                <div class="boxes-stacked-rp bleu-rp"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="card-text-rp">
+                    <span>
+                        <h1>1,234</h1>
+                    </span>
+                    <div class="rp-display">
+                        <span>
+                            <p class="p-rp">€45,678</p>
+                            <p>Chiffre d'affaires</p>
+                        </span>
+                        <span>
+                            <p class="p-rp">+12,5%</p>
+                            <p>vs mois dernier</p>
+                        </span>
+                    </div>
+                    <div>
+                        <p>Voir détails</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-rp">
+                <div class="boxes-stacked-rp bleu-rp"><i class="fa-solid fa-boxes-stacked"></i></div>
+                <div class="card-text-rp">
+                    <span>
+                        <h1>1,234</h1>
+                    </span>
+                    <div class="rp-display">
+                        <span>
+                            <p class="p-rp">1,234</p>
+                            <p>Articles en stock</p>
+                        </span>
+                        <span>
+                            <p class="p-rp">23</p>
+                            <p>Stock faible</p>
+                        </span>
+                    </div>
+                    <div>
+                        <p>Voir détails</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-rp">
+                <div class="boxes-stacked-rp bleu-rp"><i class="fa-solid fa-users"></i></div>
+                <div class="card-text-rp">
+                    <span>
+                        <h1>Clients</h1>
+                    </span>
+                    <div class="rp-display">
+                        <span>
+                            <p class="p-rp">856</p>
+                            <p>Nouveaux clients</p>
+                        </span>
+                        <span>
+                            <p class="p-rp">2,345</p>
+                            <p>Total clients</p>
+                        </span>
+                    </div>
+                    <div>
+                        <p>Voir détails</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rp-titre">
+            <span><i class="fa-solid fa-clock-rotate-left"></i></span>
+            <span>
+                <h2>Historique des Rapports</h2>
+            </span>
+        </div>
+        <table class="rp-table">
+            <thead>
+                <tr>
+                    <th><span class="aligne decalage">Nom du rapport</span></th>
+                    <th><span class="aligne decalage">Type</span></th>
+                    <th><span class="aligne decalage">Date de génération</span></th>
+                    <th><span class="aligne decalage">Statut</span></th>
+                    <th><span class="aligne decalage">Actions</span></th>
+                </tr>
+            </thead>
+            <tbody class="rp-body">
+                <tr class="box-shadow">
+                    <td>
+                        <span class="bloque">
+                            <div><i class="fa-solid fa-laptop"></i></div>
+                            <div class="space">
+                                <div>Rapport_ventes_janvier_2025.pdf</div>
+                            </div>
+                        </span>
+                    </td>
+                    <td><span>Ventes</span></td>
+                    <td><span></span>15 jan 2025</td>
+                    <td> <span>Terminé</span></td>
+                    <td><span><i class="fa-solid fa-download"></i><i class="fa-solid fa-trash"></i></span></td>
+                </tr>
+                <tr class="box-shadow">
+                    <td>
+                        <span class="bloque">
+                            <div><i class="fa-solid fa-mobile-screen-button"></i></div>
+                            <div class="space">
+                                <div>Stock_inventaire_janvier_2025.xlsx</div>
+                            </div>
+                        </span>
+                    </td>
+                    <td><span>Stock</span></td>
+                    <td><span></span>14 jan 2025</td>
+                    <td> <span>Terminé</span></td>
+                    <td><span><i class="fa-solid fa-download"></i></i><i class="fa-solid fa-trash"></i></span></td>
+                </tr>
+                <tr class="box-shadow">
+                    <td>
+                        <span class="bloque">
+                            <div><i class="fa-solid fa-headphones"></i></i></div>
+                            <div class="space">
+                                <div>Rapport_financier_trimestre.xlsx</div>
+                            </div>
+                        </span>
+                    </td>
+                    <td><span>Financier</span></td>
+                    <td><span></span>En cours</td>
+                    <td> <span>En cours..</span></td>
+                    <td><span class="separation"><i class="fa-solid fa-x"></i></span></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+
+</html>
